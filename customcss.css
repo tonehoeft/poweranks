@@ -32,107 +32,67 @@ blockquote {
 /* --Nav-- */
 
 #banner {
-  display: none;
-}
-
-#powerhead nav {
-   position: fixed; 
-   z-index: 5;
-   width: 1070px;
+  display: none; /* Turn off Squarespace default banner */
 }
 
 #powerhead {
-	width: 1100px;
-	margin-left: auto;
-	margin-right: auto;
-  	z-index: 5;
-  	position: relative;
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 5;
+  position: relative;
 }
 
 #powerhead nav {
-	background: #333333;
-	padding: 15px;
+  position: fixed; 
+  z-index: 5;
+  width: 1070px;
+  background: #333333;
+  padding: 15px;
 }
 
 #navlogo {
-	float: left;
-	padding-right: 20px;
-	padding-left: 10px;
-  	margin-top: 4px;
-}
-
-#navlogo img:hover {
-	opacity:1.0 !important;
-	filter:alpha(opacity=100) !important; /* For IE8 and earlier */
+  float: left;
+  padding-right: 20px;
+  padding-left: 10px;
+  margin-top: 4px;
 }
 
 #powerhead nav ul {
-	font-family: 'Oswald', Verdana, sans-serif !important;
-	font-size: 1.15em !important;
-  	font-weight: 400 !important;
+  font-family: Oswald, Verdana, sans-serif;
+  font-size: 1.15em;
+  font-weight: 400;
+  margin-top: -3px;
 }
 
-#powerhead nav ul, nav ul ul {
-    padding:0;
-    margin:0;
+#powerhead nav .menu > li {
+  padding-left: 25px;
+  padding-top: 3px;
 }
 
-#powerhead nav ul {
-	margin-top: -3px;
+#powerhead nav ul li a:hover, #powerhead nav ul li li a:hover  {
+  color: #a52c2c;
+  background: #FFF;
 }
 
-#powerhead nav ul li {
-	padding-left: 18px;
-}
-
-#powerhead nav ul li a:hover {
-	color: #a52c2c !important;
-	background: #FFF;
-}
-
-#powerhead nav ul li a:active {
-	background: #FFF;
-}
-
-#powerhead nav ul li li a:hover {
-	color: #a52c2c !important;
-  	background: transparent;
+#powerhead nav ul li a:active, #powerhead nav ul li li a:hover {
+  background: #FFF;
 }
 
 #powerhead nav ul li ul li {
-	padding-left: 0 !important;
-	font-size: .65em !important;
+  font-size: .65em;
+  padding-left: 5px;
 }
 
 #powerhead nav ul li ul {
-		width: 120px;
-    	background: rgb(44, 84, 165);
-    	background: rgba(44, 84, 165, .95);
+  width: 120px;
+  background: rgb(44, 84, 165);
+  background: rgba(44, 84, 165, .95);
 }
 
-#powerhead nav ul li, nav ul ul li {
-    list-style-type: none;
-    display: inline-block;
-}
-
-#powerhead nav ul li a {
+#powerhead nav ul li a, #powerhead nav ul li ul li a  {
     text-decoration: none;
-    color: #fff !important;
-    padding: 5px;
-    display:inline-block;
-}
-
-#powerhead nav ul li ul li a {
-    text-decoration: none;
-    color: #fff !important;
-    padding: 0;
-	padding-left: 5px;
-  	padding-right: 5px;
-    display:inline-block;
-}
-
-#powerhead nav ul li {
-    position: relative;
+    color: #fff;
 }
 
 #powerhead nav ul li ul {
@@ -151,12 +111,46 @@ blockquote {
 	opacity: 1;
 }
 
-#powerhead img {
-	opacity:1.0;
-	filter:alpha(opacity=100); /* For IE8 and earlier */
+#powerhead .menu > li > a {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box;
+	-webkit-transition: all 0.15s linear;
+	-moz-transition: all 0.15s linear;
+	-o-transition: all 0.15s linear;
+	transition: all 0.15s linear;
 }
 
-#powerhead img:hover {
+#powerhead .menu > li > ul > li > a{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box;
+	-webkit-transition: all 0.15s linear;
+	-moz-transition: all 0.15s linear;
+	-o-transition: all 0.15s linear;
+	transition: all 0.15s linear;
+}
+
+#powerhead .menu > li > ul > li > a:hover, .menu > li > ul > li > a:focus{
+	background: #F2F2F2 !important;
+	box-shadow: inset 0px 5px #a52c2c !important;
+	color: #a52c2c !important;
+	padding-left: 10px;
+  	padding-bottom: 10px;
+    padding-right: 10px;
+	padding-top: 10px;
+}
+
+#powerhead .menu > li > ul > li > a:hover, .menu > li > ul > li > a:focus{
+	box-shadow: inset 0px 5px #2c54a5;
+	color: #a52c2c !important;
+}
+
+#powerhead .toggle{ 
+	z-index: 4; 
+}
+
+#powerhead #banner img:hover {
 opacity:0.75;
 filter:alpha(opacity=75); /* For IE8 and earlier */
 }
@@ -171,6 +165,7 @@ filter:alpha(opacity=75); /* For IE8 and earlier */
   	padding-top: 71px;
   	width: 400px;
     background: #FFF !important;
+  	margin-top: -6px;
 }
 
 #slot2 {
@@ -229,37 +224,6 @@ body {
 }
 
 /* --End Nav-- */
-
-
-
-
-/* Menu Bar & Page */
-
-#logo {
-  margin-top: -13px !important;
-  margin-left: -4px !important;
-}
-
-#header {
-  margin-top: -10px;
-}
-
-#siteNav {
-  margin-top: 3px;
-  margin-right: 0px !important;
-  font-size: .9em !important;
-}
-  
-  #siteNav a {
-  	font-size: 1.5em;
-}
-
-#logo {
-  margin-left: -10px;
-}
-
-/* End Menu Bar & Page */
-
 
 
 
@@ -420,48 +384,6 @@ body{ -webkit-animation: bugfix infinite 1s; }
  Presentation Styles (Editable)
 ---------------------------------*/
 
-.nav {
-}
-
-.nav, .menu, .menu > li, .menu > li > a {  
-}
-
-#powerhead .menu > li > a{
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box; 
-	box-sizing: border-box;
-	-webkit-transition: all 0.15s linear;
-	-moz-transition: all 0.15s linear;
-	-o-transition: all 0.15s linear;
-	transition: all 0.15s linear;
-}
-
-#powerhead .menu > li > ul > li > a{
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box; 
-	box-sizing: border-box;
-	-webkit-transition: all 0.15s linear;
-	-moz-transition: all 0.15s linear;
-	-o-transition: all 0.15s linear;
-	transition: all 0.15s linear;
-}
-
-#powerhead .menu > li > ul > li > a:hover, .menu > li > ul > li > a:focus{
-	background: #F2F2F2 !important;
-	box-shadow: inset 0px 5px #a52c2c !important;
-	color: #a52c2c !important;
-	padding-left: 10px;
-	padding-top: 10px;
-}
-
-#powerhead .menu > li > ul > li > a:hover, .menu > li > ul > li > a:focus{
-	box-shadow: inset 0px 5px #2c54a5;
-	color: #a52c2c !important;
-}
-
-#powerhead .toggle{ 
-	z-index: 4; 
-}
 
 @media only screen and (max-width: 1023px){
 	#powerhead .menu{
