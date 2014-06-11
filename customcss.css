@@ -6,12 +6,8 @@
 
 /* --General-- */
 
-#page {
-  margin-top: 175px;
-}
-
-#canvasWrapper {
-  margin-top: -115px;
+body {
+	background: #e2dfdf;
 }
 
 blockquote {
@@ -28,202 +24,156 @@ blockquote {
 
 
 
-
 /* --Nav-- */
-
-#banner {
-  display: none; /* Turn off Squarespace default banner */
-}
 
 #powerhead {
   width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 5;
   position: relative;
+  margin: 0 auto;
+  z-index: 5;
 }
 
 #powerhead nav {
   position: fixed; 
-  z-index: 5;
   width: 1070px;
   background: #333333;
   padding: 15px;
+  z-index: 5;
 }
 
 #navlogo {
   float: left;
-  padding-right: 20px;
-  padding-left: 10px;
+  padding: 0 20px 0 10px;
   margin-top: 4px;
 }
 
-#powerhead nav ul {
+#powerhead ul {
   font-family: Oswald, Verdana, sans-serif;
   font-size: 1.15em;
   font-weight: 400;
   margin-top: -3px;
 }
 
-#powerhead nav .menu > li {
-  padding-left: 25px;
-  padding-top: 3px;
+#powerhead .menu > li {
+  padding: 3px 0 0 18px;
 }
 
-#powerhead nav ul li a:hover, #powerhead nav ul li li a:hover  {
+#powerhead .menu > li > a, #powerhead .menu > li > ul > li > a  {
+  text-decoration: none;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+#powerhead .menu > li > a {
+  padding: 5px;
+}
+
+#powerhead .menu > li > a:hover, #powerhead .menu > li > a:focus {
+  box-shadow: inset 0 5px #2c54a5;
   color: #a52c2c;
   background: #FFF;
 }
 
-#powerhead nav ul li a:active, #powerhead nav ul li li a:hover {
-  background: #FFF;
+#powerhead .menu > li > ul {
+  background: rgb(44, 84, 165);
+  background: rgba(44, 84, 165, .90);
+  margin-top: 4px;
+  opacity: 0;
+  position: absolute;
+  visibility: hidden;
+  -webkit-transition: opacity 0.2s linear;
+  -moz-transition: opacity 0.2s linear;
+  -o-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
 }
 
-#powerhead nav ul li ul li {
+#powerhead .menu > li:hover > ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+#powerhead .sportsNav {
+  width: 95px;
+}
+
+#powerhead .entertainmentNav {
+  width: 65px;
+}
+
+#powerhead .lifestyleNav {
+  width: 115px;
+}
+
+#powerhead .menu > li > ul > li {
   font-size: .65em;
   padding-left: 5px;
 }
 
-#powerhead nav ul li ul {
-  width: 120px;
-  background: rgb(44, 84, 165);
-  background: rgba(44, 84, 165, .95);
-}
-
-#powerhead nav ul li a, #powerhead nav ul li ul li a  {
-    text-decoration: none;
-    color: #fff;
-}
-
-#powerhead nav ul li ul {
-    opacity: 0;
-    -webkit-transition: opacity 0.3s;
-	-moz-transition: opacity 0.3s;
-  	-o-transition: opacity 0.3s;
-    position: absolute;
-  	margin-top: -4px;
-  	visibility: hidden;
-  	display: block;
-  }
-
-#powerhead nav ul li:hover ul {
-    visibility: visible;
-	opacity: 1;
-}
-
-#powerhead .menu > li > a {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box; 
-	box-sizing: border-box;
-	-webkit-transition: all 0.15s linear;
-	-moz-transition: all 0.15s linear;
-	-o-transition: all 0.15s linear;
-	transition: all 0.15s linear;
-}
-
-#powerhead .menu > li > ul > li > a{
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box; 
-	box-sizing: border-box;
-	-webkit-transition: all 0.15s linear;
-	-moz-transition: all 0.15s linear;
-	-o-transition: all 0.15s linear;
-	transition: all 0.15s linear;
-}
-
-#powerhead .menu > li > ul > li > a:hover, .menu > li > ul > li > a:focus{
-	background: #F2F2F2 !important;
-	box-shadow: inset 0px 5px #a52c2c !important;
-	color: #a52c2c !important;
-	padding-left: 10px;
-  	padding-bottom: 10px;
-    padding-right: 10px;
-	padding-top: 10px;
-}
-
-#powerhead .menu > li > ul > li > a:hover, .menu > li > ul > li > a:focus{
-	box-shadow: inset 0px 5px #2c54a5;
-	color: #a52c2c !important;
-}
-
-#powerhead .toggle{ 
-	z-index: 4; 
-}
-
-#powerhead #banner img:hover {
-opacity:0.75;
-filter:alpha(opacity=75); /* For IE8 and earlier */
-}
-
-#canvaswrapper {
-  z-index: 1;
-  position: relative;
-}
-
-#slot1 {
-	display: block;
-  	padding-top: 71px;
-  	width: 400px;
-    background: #FFF !important;
-  	margin-top: -6px;
-}
-
-#slot2 {
-	float: left;
-	width: 400px;
-    background: #FFF !important;
-}
-
-#slot3 {
-	float: left;
-	width: 300px;
-	margin-top: -175px;
-    background: #FFF !important;
-}
-
-#slot4 {
-	float: left;
-	width: 400px;
-	margin-top: -175px;
-    background: #FFF !important;
-}
-
-#slot5 {
-	float: left;
-	width: 400px;
-  	background: #FFF !important
-}
-
-  #banner img {
-    max-width: 100%;
-    height: auto;
-    width: auto\9; /* ie8 */
-  }
-
-#powerhead a {
-	text-decoration: none;
-}
-
-.sqs-search-ui-button {
-  padding-top: 19px;
-}
-
-
-body {
-	background: #e2dfdf;
-}
-
-.homepage #canvasWrapper {
-  margin-top: 0px; /* Homepage Nav Styles */
-}
-
-.homepage #banner {
-  display: block;
-  padding-top: 4px;
-  background: #FFF; /* Homepage Nav Styles */
+#powerhead .menu > li > ul > li > a:hover, .menu > li > ul > li > a:focus {
+  background: #FFF;
+  box-shadow: inset 0 3px #a52c2c;
+  color: #a52c2c;
+  padding: 5px;
 }
 
 /* --End Nav-- */
+
+
+
+/* --Header-- */
+
+#slot1, #slot2, #slot3, #slot4, #slot5 {
+  background: #FFF;
+}
+
+#slot1, #slot2, #slot4, #slot5 {
+  width: 400px;
+}
+
+#slot2, #slot3, #slot4, #slot5 {
+  float: left;
+}
+
+#slot3, #slot4 {
+  margin-top: -175px;
+}
+
+#slot1 {
+  padding-top: 71px;
+  margin-top: -6px;
+}
+
+#slot3 {
+  width: 300px;
+}
+
+#banner img {
+  max-width: 100%;
+  height: auto;
+  width: auto\9; /* For IE8 and earlier */
+  }
+
+#powerhead #banner img:hover {
+  opacity:0.75;
+  filter:alpha(opacity=75); /* For IE8 and earlier */
+}
+
+#banner {
+  display: none; /* Turns off header for all pages */
+  padding-top: 4px;
+}
+
+.homepage #banner {
+  display: block; /* Turns header on for homepage/index pages */
+}
+
+/* --End Header-- */
 
 
 
@@ -247,6 +197,10 @@ body{ -webkit-animation: bugfix infinite 1s; }
 /* Nicolas Gallagher micro clearfix */
 .clearfix:before, .clearfix:after { display: table; content: ""; }
 .clearfix:after { clear: both; }
+
+#powerhead .toggle{ 
+	z-index: 4; 
+}
 
 @media only screen and (max-width: 1023px){
 	.menu { display: none; opacity: 0; width: 100%; position: absolute; right: 0; }
@@ -668,6 +622,10 @@ body{ -webkit-animation: bugfix infinite 1s; }
 
 
 /* Article Blocks */
+
+.homepage #page {
+  margin-top: 165px;
+}
 
 .sqs-block-content ul {
   margin:  0 0 0 0;
