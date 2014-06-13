@@ -651,6 +651,10 @@ header .meta .author a:hover {
     margin-top: 25px;
   }
   
+  #powerhead .menu > li > a { 
+    margin-right: 15px;
+  }
+  
   .toggle {
     clear: both;
     float: right;
