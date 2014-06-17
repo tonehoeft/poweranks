@@ -7,7 +7,7 @@
 /* --General-- */
 
 body {
-  background: #e2dfdf;
+	background: #e2dfdf;
 }
 
 h1 {
@@ -37,7 +37,8 @@ blockquote {
 }
 
 #powerhead nav {
-  position: fixed; 
+  position: fixed;
+  -webkit-backface-visibility: hidden;
   width: 1070px;
   background: #333;
   padding: 15px;
@@ -446,7 +447,7 @@ header .meta .author a:hover {
 }
 
 .footercopy a {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 /* --End Footer-- */
@@ -494,6 +495,10 @@ header .meta .author a:hover {
     display: none;
   }
   
+  #powerhead .menu > li > ul, #powerhead .menu, #powerhead .navlogo {
+    position: relative;
+  }
+  
   #canvas {
     margin-top: -250px;
   }
@@ -509,6 +514,7 @@ header .meta .author a:hover {
   
   #powerhead nav {
     padding-bottom: 0px;
+    display: table;
   }
   
   #powerhead .menu {
@@ -540,14 +546,14 @@ header .meta .author a:hover {
   }
   
   #powerhead .menu > li > a:hover, .menu > li > a:focus {
-    background: #F2F2F2;
-    box-shadow: 5px 0 #a52c2c;
-    padding: 10px 10px 10px 20px;
+	background: #F2F2F2;
+	box-shadow: 5px 0 #a52c2c;
+	padding: 10px 10px 10px 20px;
   }
   
   .navlogo {
-    padding: 0;
-    text-align: center;
+	padding: 0;
+	text-align: center;
     margin: 0 0 0 16px;
   }
   
@@ -564,29 +570,29 @@ header .meta .author a:hover {
   }
   
   .toggle:after {
-    content: attr(data-open);
-    display: block;
-    width: 175px;
-    margin: 50px auto 20px auto;
-    padding: 0 5px;
-    background: #2c54a5;
+	content: attr(data-open);
+	display: block;
+	width: 175px;
+	margin: 50px auto 20px auto;
+	padding: 0 5px;
+	background: #2c54a5;
     font-family: Oswald, Verdana, sans-serif;
     font-size: .8em;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-    text-align: center;
-    color: #FFF;
-    -webkit-transition: all 0.2s linear;
-    -moz-transition: all 0.2s linear;
-    -o-transition: all 0.2s linear;
-    transition: all 0.2s linear;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	text-align: center;
+	color: #FFF;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
   }
 	
   .toggle:hover:after {
-    background: #a52c2c;
+	background: #a52c2c;
   }
   
   #toggle:checked + div .menu { 
@@ -596,7 +602,7 @@ header .meta .author a:hover {
   }
   
   #toggle:checked + div .toggle:after {
-    content: attr(data-close);
+	content: attr(data-close);
   }
   
   #powerhead .banner {
