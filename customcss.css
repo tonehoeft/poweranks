@@ -7,7 +7,7 @@
 /* --General-- */
 
 body {
-	background: #e2dfdf;
+  background: #e2dfdf;
 }
 
 h1 {
@@ -336,7 +336,7 @@ header .meta .author a:hover {
 }
 
 #spotifyframe {
-  position: realtive;
+  position: relative;
   margin: 0 auto;
 }
 
@@ -446,7 +446,7 @@ header .meta .author a:hover {
 }
 
 .footercopy a {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* --End Footer-- */
@@ -499,12 +499,12 @@ header .meta .author a:hover {
   }
   
   #powerhead {
-	width: auto;
+    width: auto;
     margin: 0 auto;
   }
   
   #powerhead nav, #powerhead .menu, .homepage .article-list, .footcontainer {
-      width: 100%;
+    width: 100%;
   }
   
   #powerhead nav {
@@ -517,7 +517,7 @@ header .meta .author a:hover {
     position: absolute; 
     left: 0;
     background: rgba(255, 255, 255, .95);
-	border-top: 5px solid #2c54a5;
+    border-top: 5px solid #2c54a5;
     margin-top: 50px;
     text-align: right;
   }
@@ -536,18 +536,18 @@ header .meta .author a:hover {
     -moz-box-sizing: border-box; 
     box-sizing: border-box;
     padding: 5px 5px;
-	color: #2c54a5;
+    color: #2c54a5;
   }
   
   #powerhead .menu > li > a:hover, .menu > li > a:focus {
-	background: #F2F2F2;
-	box-shadow: 5px 0 #a52c2c;
-	padding: 10px 10px 10px 20px;
+    background: #F2F2F2;
+    box-shadow: 5px 0 #a52c2c;
+    padding: 10px 10px 10px 20px;
   }
   
   .navlogo {
-	padding: 0;
-	text-align: center;
+    padding: 0;
+    text-align: center;
     margin: 0 0 0 16px;
   }
   
@@ -564,29 +564,29 @@ header .meta .author a:hover {
   }
   
   .toggle:after {
-	content: attr(data-open);
-	display: block;
-	width: 175px;
-	margin: 50px auto 20px auto;
-	padding: 0 5px;
-	background: #2c54a5;
+    content: attr(data-open);
+    display: block;
+    width: 175px;
+    margin: 50px auto 20px auto;
+    padding: 0 5px;
+    background: #2c54a5;
     font-family: Oswald, Verdana, sans-serif;
     font-size: .8em;
-	-webkit-border-radius: 3px;
-	border-radius: 3px;
-	text-align: center;
-	color: #FFF;
-	-webkit-transition: all 0.2s linear;
-	-moz-transition: all 0.2s linear;
-	-o-transition: all 0.2s linear;
-	transition: all 0.2s linear;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+    color: #FFF;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
   }
 	
   .toggle:hover:after {
-	background: #a52c2c;
+    background: #a52c2c;
   }
   
   #toggle:checked + div .menu { 
@@ -596,7 +596,7 @@ header .meta .author a:hover {
   }
   
   #toggle:checked + div .toggle:after {
-	content: attr(data-close);
+    content: attr(data-close);
   }
   
   #powerhead .banner {
